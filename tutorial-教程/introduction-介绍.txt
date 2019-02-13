@@ -120,21 +120,21 @@ its magic behavior.
 
 In addition to "int" and "float", Python supports other types of
 numbers, such as "Decimal" and "Fraction". Python also has built-in
-support for complex numbers, and uses the "j" or "J" suffix to
-indicate the imaginary part (e.g. "3+5j").
+support for complex numbers, and uses the "j" or "J" suffix-后缀 to
+indicate the imaginary-虚构的 part (e.g. "3+5j").
 
 
 3.1.2. Strings
 --------------
 
 Besides numbers, Python can also manipulate strings, which can be
-expressed in several ways.  They can be enclosed in single quotes
+expressed-表示 in several ways.  They can be enclosed-附上 in single quotes
 ("'...'") or double quotes (""..."") with the same result [2].  "\"
 can be used to escape quotes:
 
    >>> 'spam eggs'  # single quotes
    'spam eggs'
-   >>> 'doesn\'t'  # use \' to escape the single quote...
+   >>> 'doesn\'t'  # use \' to escape-逃脱 the single quote...
    "doesn't"
    >>> "doesn't"  # ...or use double quotes instead
    "doesn't"
@@ -146,12 +146,12 @@ can be used to escape quotes:
    '"Isn\'t," they said.'
 
 In the interactive interpreter, the output string is enclosed in
-quotes and special characters are escaped with backslashes.  While
+quotes and special characters are escaped with backslashes-反斜线.  While
 this might sometimes look different from the input (the enclosing
 quotes could change), the two strings are equivalent.  The string is
 enclosed in double quotes if the string contains a single quote and no
 double quotes, otherwise it is enclosed in single quotes.  The
-"print()" function produces a more readable output, by omitting the
+"print()" function produces a more readable output, by omitting-省略 the
 enclosing quotes and by printing escaped and special characters:
 
    >>> '"Isn\'t," they said.'
@@ -540,4 +540,4 @@ This example introduces several new features.
     the same meaning with both single ("'...'") and double (""..."")
     quotes. The only difference between the two is that within single
     quotes you don't need to escape """ (but you have to escape "\'")
-    and vice versa.
+    and vice versa-反.
