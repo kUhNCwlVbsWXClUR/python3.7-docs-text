@@ -1,8 +1,8 @@
 3. An Informal Introduction to Python
 *************************************
 
-In the following examples, input and output are distinguished by the
-presence or absence of prompts (*>>>* and *...*): to repeat the
+In the following examples, input and output are distinguished-卓越的 by the
+presence-出席 or absence-缺席 of prompts (*>>>* and *...*): to repeat the
 example, you must type everything after the prompt, when the prompt
 appears; lines that do not begin with a prompt are output from the
 interpreter. Note that a secondary prompt on a line by itself in an
@@ -14,8 +14,8 @@ interactive prompt, include comments.  Comments in Python start with
 the hash character, "#", and extend to the end of the physical line.
 A comment may appear at the start of a line or following whitespace or
 code, but not within a string literal.  A hash character within a
-string literal is just a hash character. Since comments are to clarify
-code and are not interpreted by Python, they may be omitted when
+string literal is just a hash character. Since comments are to clarify-澄清
+code and are not interpreted by Python, they may be omitted-省略了的 when
 typing in examples.
 
 Some examples:
@@ -38,7 +38,7 @@ for the primary prompt, ">>>".  (It shouldn't take long.)
 
 The interpreter acts as a simple calculator: you can type an
 expression at it and it will write the value.  Expression syntax is
-straightforward: the operators "+", "-", "*" and "/" work just like in
+straightforward-易懂的: the operators "+", "-", "*" and "/" work just like in
 most other languages (for example, Pascal or C); parentheses ("()")
 can be used for grouping. For example:
 
@@ -52,7 +52,7 @@ can be used for grouping. For example:
    1.6
 
 The integer numbers (e.g. "2", "4", "20") have type "int", the ones
-with a fractional part (e.g. "5.0", "1.6") have type "float".  We will
+with a fractional-分数 part (e.g. "5.0", "1.6") have type "float".  We will
 see more about numeric types later in the tutorial.
 
 Division ("/") always returns a float.  To do *floor division* and get
@@ -78,7 +78,7 @@ powers [1]:
    128
 
 The equal sign ("=") is used to assign a value to a variable.
-Afterwards, no result is displayed before the next interactive prompt:
+Afterwards-后来, no result is displayed before the next interactive prompt:
 
    >>> width = 20
    >>> height = 5 * 9
@@ -94,7 +94,7 @@ will give you an error:
    NameError: name 'n' is not defined
 
 There is full support for floating point; operators with mixed type
-operands convert the integer operand to floating point:
+operands convert the integer operand-操作数 to floating point:
 
    >>> 4 * 3.75 - 1
    14.0
@@ -532,7 +532,7 @@ This example introduces several new features.
 
 -[ Footnotes ]-
 
-[1] Since "**" has higher precedence than "-", "-3**2" will be
+[1] Since "**" has higher precedence-优先 than "-", "-3**2" will be
     interpreted as "-(3**2)" and thus result in "-9".  To avoid this
     and get "9", you can use "(-3)**2".
 
