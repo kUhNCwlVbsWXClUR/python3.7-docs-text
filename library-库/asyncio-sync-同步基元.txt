@@ -1,4 +1,4 @@
-Synchronization Primitives
+Synchronization Primitives-基元
 **************************
 
 asyncio synchronization primitives are designed to be similar to those

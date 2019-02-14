@@ -1,4 +1,4 @@
-"chunk" --- Read IFF chunked data
+"chunk" --- Read IFF chunked-相当大 data
 *********************************
 
 **Source code:** Lib/chunk.py

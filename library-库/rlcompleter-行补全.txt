@@ -5,8 +5,8 @@
 
 ======================================================================
 
-The "rlcompleter" module defines a completion function suitable for
-the "readline" module by completing valid Python identifiers and
+The "rlcompleter" module defines a completion-完成 function suitable for
+the "readline" module by completing－完成 valid Python identifiers-标示符 and
 keywords.
 
 When this module is imported on a Unix platform with the "readline"

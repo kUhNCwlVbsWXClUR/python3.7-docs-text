@@ -1,4 +1,4 @@
-"email.header": Internationalized headers
+"email.header": Internationalized-国际化 headers
 *****************************************
 
 **Source code:** Lib/email/header.py

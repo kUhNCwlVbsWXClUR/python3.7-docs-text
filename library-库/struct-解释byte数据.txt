@@ -1,4 +1,4 @@
-"struct" --- Interpret bytes as packed binary data
+"struct" --- Interpret-解释 bytes as packed binary data
 **************************************************
 
 **Source code:** Lib/struct.py

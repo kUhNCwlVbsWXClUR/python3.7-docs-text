@@ -1,4 +1,4 @@
-"logging" --- Logging facility for Python
+"logging" --- Logging facility-设施 for Python
 *****************************************
 
 **Source code:** Lib/logging/__init__.py

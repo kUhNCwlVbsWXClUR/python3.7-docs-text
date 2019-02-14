@@ -1,4 +1,4 @@
-"ensurepip" --- Bootstrapping the "pip" installer
+"ensurepip" --- Bootstrapping-自力更生 the "pip" installer
 *************************************************
 
 New in version 3.4.

@@ -1,4 +1,4 @@
-"xml.dom.pulldom" --- Support for building partial DOM trees
+"xml.dom.pulldom" --- Support for building partial-部分的 DOM trees
 ************************************************************
 
 **Source code:** Lib/xml/dom/pulldom.py

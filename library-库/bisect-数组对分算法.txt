@@ -1,4 +1,4 @@
-"bisect" --- Array bisection algorithm
+"bisect" --- Array bisection-对分 algorithm
 **************************************
 
 **Source code:** Lib/bisect.py
