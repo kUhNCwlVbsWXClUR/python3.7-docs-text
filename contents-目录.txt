@@ -9,7 +9,7 @@ Python Documentation contents
 
     * New Features
 
-      * PEP 563: Postponed Evaluation of Annotations
+      * PEP 563: Postponed- 延期的 Evaluation of Annotations
 
       * PEP 538: Legacy C Locale Coercion
 
