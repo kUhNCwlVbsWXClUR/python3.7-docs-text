@@ -27,8 +27,8 @@ example:
 
 There can be zero or more "elif" parts, and the "else" part is
 optional.  The keyword '"elif"' is short for 'else if', and is useful
-to avoid excessive indentation.  An  "if" ... "elif" ... "elif" ...
-sequence is a substitute for the "switch" or "case" statements found
+to avoid excessive-过多的 indentation.  An  "if" ... "elif" ... "elif" ...
+sequence is a substitute-代替 for the "switch" or "case" statements found
 in other languages.
 
 
@@ -36,12 +36,12 @@ in other languages.
 =====================
 
 The "for" statement in Python differs a bit from what you may be used
-to in C or Pascal.  Rather than always iterating over an arithmetic
+to in C or Pascal.  Rather than always iterating over an arithmetic-计算
 progression of numbers (like in Pascal), or giving the user the
 ability to define both the iteration step and halting condition (as
 C), Python's "for" statement iterates over the items of any sequence
 (a list or a string), in the order that they appear in the sequence.
-For example (no pun intended):
+For example (no pun intended)-python的for语句迭代序列中所有的元素,以序列原有的顺序:
 
    >>> # Measure some strings:
    ... words = ['cat', 'window', 'defenestrate']
@@ -55,8 +55,8 @@ For example (no pun intended):
 If you need to modify the sequence you are iterating over while inside
 the loop (for example to duplicate selected items), it is recommended
 that you first make a copy.  Iterating over a sequence does not
-implicitly make a copy.  The slice notation makes this especially
-convenient:
+implicitly make a copy.  The slice notation-表示法 makes this especially
+convenient-如果需要在循环中更改序列, 建议使用copy:
 
    >>> for w in words[:]:  # Loop over a slice copy of the entire list.
    ...     if len(w) > 6:
@@ -66,15 +66,15 @@ convenient:
    ['defenestrate', 'cat', 'window', 'defenestrate']
 
 With "for w in words:", the example would attempt to create an
-infinite list, inserting "defenestrate" over and over again.
+infinite-无穷的 list, inserting "defenestrate-把扔出窗外" over and over again.
 
 
 4.3. The "range()" Function
 ===========================
 
 If you do need to iterate over a sequence of numbers, the built-in
-function "range()" comes in handy.  It generates arithmetic
-progressions:
+function "range()" comes in handy.  It generates arithmetic-算术的
+progressions-连续:
 
    >>> for i in range(5):
    ...     print(i)
@@ -86,7 +86,7 @@ progressions:
    4
 
 The given end point is never part of the generated sequence;
-"range(10)" generates 10 values, the legal indices for items of a
+"range(10)" generates 10 values, the legal-合法的 indices for items of a
 sequence of length 10.  It is possible to let the range start at
 another number, or to specify a different increment (even negative;
 sometimes this is called the 'step'):
@@ -123,14 +123,14 @@ A strange thing happens if you just print a range:
 
 In many ways the object returned by "range()" behaves as if it is a
 list, but in fact it isn't. It is an object which returns the
-successive items of the desired sequence when you iterate over it, but
+successive-连续的 items of the desired-想得到的 sequence when you iterate over it, but
 it doesn't really make the list, thus saving space.
 
 We say such an object is *iterable*, that is, suitable as a target for
 functions and constructs that expect something from which they can
 obtain successive items until the supply is exhausted. We have seen
 that the "for" statement is such an *iterator*. The function "list()"
-is another; it creates lists from iterables:
+is another; it creates lists from iterables-我们称这个对象是可以迭代的:
 
    >>> list(range(5))
    [0, 1, 2, 3, 4]
@@ -142,14 +142,14 @@ iterables as argument.
 4.4. "break" and "continue" Statements, and "else" Clauses on Loops
 ===================================================================
 
-The "break" statement, like in C, breaks out of the innermost
+The "break" statement, like in C, breaks out of the innermost-最里面的
 enclosing "for" or "while" loop.
 
-Loop statements may have an "else" clause; it is executed when the
+Loop statements may have an "else" clause; it is executed when the   666666
 loop terminates through exhaustion of the list (with "for") or when
 the condition becomes false (with "while"), but not when the loop is
 terminated by a "break" statement.  This is exemplified by the
-following loop, which searches for prime numbers:
+following loop, which searches for prime numbers-质数:
 
    >>> for n in range(2, 10):
    ...     for x in range(2, n):
@@ -200,7 +200,7 @@ next iteration of the loop:
 ======================
 
 The "pass" statement does nothing. It can be used when a statement is
-required syntactically but the program requires no action. For
+required syntactically-语法结构需要 but the program requires no action. For
 example:
 
    >>> while True:
@@ -247,7 +247,7 @@ parameters. The statements that form the body of the function start at
 the next line, and must be indented.
 
 The first statement of the function body can optionally be a string
-literal; this string literal is the function's documentation string,
+literal; this string literal is the function's documentation string-函数的文档字符串,
 or *docstring*. (More about docstrings can be found in the section
 Documentation Strings.) There are tools which use docstrings to
 automatically produce online or printed documentation, or to let the
@@ -257,17 +257,17 @@ docstrings in code that you write, so make a habit of it.
 The *execution* of a function introduces a new symbol table used for
 the local variables of the function.  More precisely, all variable
 assignments in a function store the value in the local symbol table;
-whereas variable references first look in the local symbol table, then
+whereas variable references first look in the local symbol-符号 table, then
 in the local symbol tables of enclosing functions, then in the global
 symbol table, and finally in the table of built-in names. Thus, global
 variables cannot be directly assigned a value within a function
 (unless named in a "global" statement), although they may be
-referenced.
+referenced-本地-本地函数-全局.
 
 The actual parameters (arguments) to a function call are introduced in
-the local symbol table of the called function when it is called; thus,
+the local symbol table of the called function when it is called-函数作用域; thus,
 arguments are passed using *call by value* (where the *value* is
-always an object *reference*, not the value of the object). [1] When a
+always an object *reference*, not the value of the object-参数往往是对象引用). [1] When a
 function calls another function, a new local symbol table is created
 for that call.
 
@@ -327,7 +327,7 @@ This example, as usual, demonstrates some new Python features:
   and methods, using *classes*, see Classes) The method "append()"
   shown in the example is defined for list objects; it adds a new
   element at the end of the list.  In this example it is equivalent to
-  "result = result + [a]", but more efficient.
+  "result = result + [a]", but more efficient-使用序列的append方法比直接使用"+"更有效率.
 
 
 4.7. More on Defining Functions
@@ -371,7 +371,7 @@ This example also introduces the "in" keyword. This tests whether or
 not a sequence contains a certain value.
 
 The default values are evaluated at the point of function definition
-in the *defining* scope, so that
+in the *defining* scope, so that-函数参数的默认值是defining scope, 函数的赋值在函数定义的时候就已经完成啦!,在函数执行的时候不会再更新
 
    i = 5
 
@@ -449,7 +449,7 @@ arguments accepted by the function (e.g. "actor" is not a valid
 argument for the "parrot" function), and their order is not important.
 This also includes non-optional arguments (e.g. "parrot(voltage=1000)"
 is valid too). No argument may receive a value more than once. Here's
-an example that fails due to this restriction:
+an example that fails due to this restriction-在函数调用是关键字参数应该在位置参数之后:
 
    >>> def function(a):
    ...     pass
@@ -501,7 +501,7 @@ guaranteed to match the order in which they were provided in the
 function call.
 
 
-4.7.3. Arbitrary Argument Lists
+4.7.3. Arbitrary-任意的 Argument Lists  stoph
 -------------------------------
 
 Finally, the least frequently used option is to specify that a
