@@ -70,8 +70,8 @@ name:
 ====================
 
 A module can contain executable statements as well as function
-definitions. These statements are intended to initialize the module.
-They are executed only the *first* time the module name is encountered
+definitions. These statements are intended to initialize the module.-模块中可能含有执行语句,这些语句主要完成的是模块的初始化工作
+They are executed only the *first* time the module name is encountered-这些将在import时候完成
 in an import statement. [1] (They are also run if the file is executed
 as a script.)
 
@@ -254,7 +254,7 @@ Python comes with a library of standard modules, described in a
 separate document, the Python Library Reference ("Library Reference"
 hereafter).  Some modules are built into the interpreter; these
 provide access to operations that are not part of the core of the
-language but are nevertheless built in, either for efficiency or to
+language but are nevertheless-然而 built in, either for efficiency or to
 provide access to operating system primitives such as system calls.
 The set of such modules is a configuration option which also depends
 on the underlying platform.  For example, the "winreg" module is only
@@ -276,7 +276,7 @@ and secondary prompts:
 These two variables are only defined if the interpreter is in
 interactive mode.
 
-The variable "sys.path" is a list of strings that determines the
+The variable "sys.path" is a list of strings that determines-决定 the
 interpreter's search path for modules. It is initialized to a default
 path taken from the environment variable "PYTHONPATH", or from a
 built-in default if "PYTHONPATH" is not set.  You can modify it using
@@ -366,7 +366,7 @@ If you want a list of those, they are defined in the standard module
 =============
 
 Packages are a way of structuring Python's module namespace by using
-"dotted module names".  For example, the module name "A.B" designates
+"dotted module names".  For example, the module name "A.B" designates-指定
 a submodule named "B" in a package named "A".  Just like the use of
 modules saves the authors of different modules from having to worry
 about each other's global variable names, the use of dotted module
@@ -459,7 +459,7 @@ If it fails to find it, an "ImportError" exception is raised.
 Contrarily, when using syntax like "import item.subitem.subsubitem",
 each item except for the last must be a package; the last item can be
 a module or a package but can't be a class or function or variable
-defined in the previous item.
+defined in the previous item-除了最后一个其他的必须是包名,最后一个可以是包名或者模块名,但不能是函数或者类.
 
 
 6.4.1. Importing * From a Package
