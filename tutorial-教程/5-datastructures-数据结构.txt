@@ -35,9 +35,9 @@ list.remove(x)
 
 list.pop([i])
 
-   Remove the item at the given position in the list, and return it.
+   Remove the item at the given position in the list-移除具体位置的元素, and return it.
    If no index is specified, "a.pop()" removes and returns the last
-   item in the list.  (The square brackets around the *i* in the
+   item in the list-移除最后一个元素.  (The square brackets around the *i* in the
    method signature denote that the parameter is optional, not that
    you should type square brackets at that position.  You will see
    this notation frequently in the Python Library Reference.)
@@ -108,7 +108,7 @@ data structures in Python.
 
 The list methods make it very easy to use a list as a stack, where the
 last element added is the first element retrieved ("last-in, first-
-out").  To add an item to the top of the stack, use "append()".  To
+out-后进先出").  To add an item to the top of the stack, use "append()".  To
 retrieve an item from the top of the stack, use "pop()" without an
 explicit index.  For example:
 
@@ -133,7 +133,7 @@ explicit index.  For example:
 ----------------------------
 
 It is also possible to use a list as a queue, where the first element
-added is the first element retrieved ("first-in, first-out"); however,
+added is the first element retrieved ("first-in, first-out-先进先出"); however,
 lists are not efficient for this purpose.  While appends and pops from
 the end of list are fast, doing inserts or pops from the beginning of
 a list is slow (because all of the other elements have to be shifted
@@ -157,7 +157,7 @@ have fast appends and pops from both ends.  For example:
 5.1.3. List Comprehensions
 --------------------------
 
-List comprehensions provide a concise way to create lists. Common
+List comprehensions provide a concise-简要的 way to create lists. Common
 applications are to make new lists where each element is the result of
 some operations applied to each member of another sequence or
 iterable, or to create a subsequence of those elements that satisfy a
@@ -250,7 +250,7 @@ functions:
 5.1.4. Nested List Comprehensions
 ---------------------------------
 
-The initial expression in a list comprehension can be any arbitrary
+The initial expression in a list comprehension can be any arbitrary-任意的
 expression, including another list comprehension.
 
 Consider the following example of a 3x4 matrix implemented as a list
@@ -335,7 +335,7 @@ value is assigned to it).  We'll find other uses for "del" later.
 We saw that lists and strings have many common properties, such as
 indexing and slicing operations.  They are two examples of *sequence*
 data types (see Sequence Types --- list, tuple, range).  Since Python
-is an evolving language, other sequence data types may be added.
+is an evolving-进化的 language, other sequence data types may be added.
 There is also another standard sequence data type: the *tuple*.
 
 A tuple consists of a number of values separated by commas, for
@@ -405,13 +405,14 @@ as there are elements in the sequence.  Note that multiple assignment
 is really just a combination of tuple packing and sequence unpacking.
 
 
+stoph
 5.4. Sets
 =========
 
 Python also includes a data type for *sets*.  A set is an unordered
 collection with no duplicate elements.  Basic uses include membership
-testing and eliminating duplicate entries.  Set objects also support
-mathematical operations like union, intersection, difference, and
+testing and eliminating-除去 duplicate entries.  Set objects also support
+mathematical operations like union, intersection-交集, difference, and
 symmetric difference.
 
 Curly braces or the "set()" function can be used to create sets.
@@ -513,7 +514,7 @@ of key-value pairs:
    {'sape': 4139, 'guido': 4127, 'jack': 4098}
 
 In addition, dict comprehensions can be used to create dictionaries
-from arbitrary key and value expressions:
+from arbitrary key and value expressions-字典解析式:
 
    >>> {x: x**2 for x in (2, 4, 6)}
    {2: 4, 4: 16, 6: 36}

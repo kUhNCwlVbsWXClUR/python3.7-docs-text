@@ -6,7 +6,7 @@ printed in a human-readable form, or written to a file for future use.
 This chapter will discuss some of the possibilities.
 
 
-7.1. Fancier Output Formatting
+7.1. Fancier-发烧友 Output Formatting
 ==============================
 
 So far we've encountered two ways of writing values: *expression
@@ -277,7 +277,7 @@ will only be read, "'w'" for only writing (an existing file with the
 same name will be erased), and "'a'" opens the file for appending; any
 data written to the file is automatically added to the end.  "'r+'"
 opens the file for both reading and writing. The *mode* argument is
-optional; "'r'" will be assumed if it's omitted.
+optional; "'r'" will be assumed if it's omitted-省略的.
 
 Normally, files are opened in *text mode*, that means, you read and
 write strings from and to the file, which are encoded in a specific

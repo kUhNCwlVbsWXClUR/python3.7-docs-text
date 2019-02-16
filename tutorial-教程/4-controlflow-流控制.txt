@@ -501,7 +501,7 @@ guaranteed to match the order in which they were provided in the
 function call.
 
 
-4.7.3. Arbitrary-任意的 Argument Lists  stoph
+4.7.3. Arbitrary-任意的 Argument Lists  
 -------------------------------
 
 Finally, the least frequently used option is to specify that a
@@ -531,7 +531,7 @@ they can only be used as keywords rather than positional arguments.
 4.7.4. Unpacking Argument Lists
 -------------------------------
 
-The reverse situation occurs when the arguments are already in a list
+The reverse situation-相反情况 occurs when the arguments are already in a list
 or tuple but need to be unpacked for a function call requiring
 separate positional arguments.  For instance, the built-in "range()"
 function expects separate *start* and *stop* arguments.  If they are
@@ -566,7 +566,7 @@ a+b". Lambda functions can be used wherever function objects are
 required.  They are syntactically restricted to a single expression.
 Semantically, they are just syntactic sugar for a normal function
 definition.  Like nested function definitions, lambda functions can
-reference variables from the containing scope:
+reference variables from the containing scope-小的匿名函数可是使用lambda表达式:
 
    >>> def make_incrementor(n):
    ...     return lambda x: x + n
@@ -577,8 +577,8 @@ reference variables from the containing scope:
    >>> f(1)
    43
 
-The above example uses a lambda expression to return a function.
-Another use is to pass a small function as an argument:
+The above example uses a lambda expression to return a function-使用匿名表达式返回一个函数.
+Another use is to pass a small function as an argument-作为一个参数传递:
 
    >>> pairs = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]
    >>> pairs.sort(key=lambda pair: pair[1])
@@ -635,7 +635,7 @@ Here is an example of a multi-line docstring:
 4.7.7. Function Annotations
 ---------------------------
 
-Function annotations are completely optional metadata information
+Function annotations-注释 are completely optional metadata information
 about the types used by user-defined functions (see **PEP 3107** and
 **PEP 484** for more information).
 
@@ -660,7 +660,7 @@ annotated:
    'spam and eggs'
 
 
-4.8. Intermezzo: Coding Style
+4.8. Intermezzo-插曲: Coding Style
 =============================
 
 Now that you are about to write longer, more complex pieces of Python,
@@ -668,20 +668,20 @@ it is a good time to talk about *coding style*.  Most languages can be
 written (or more concise, *formatted*) in different styles; some are
 more readable than others. Making it easy for others to read your code
 is always a good idea, and adopting a nice coding style helps
-tremendously for that.
+tremendously-惊人地 for that.
 
 For Python, **PEP 8** has emerged as the style guide that most
-projects adhere to; it promotes a very readable and eye-pleasing
+projects adhere-遵守 to; it promotes a very readable and eye-pleasing
 coding style.  Every Python developer should read it at some point;
 here are the most important points extracted for you:
 
 * Use 4-space indentation, and no tabs.
 
-  4 spaces are a good compromise between small indentation (allows
+  4 spaces are a good compromise-妥协处理 between small indentation (allows
   greater nesting depth) and large indentation (easier to read).  Tabs
   introduce confusion, and are best left out.
 
-* Wrap lines so that they don't exceed 79 characters.
+* Wrap lines-自动换行 so that they don't exceed-超过 79 characters.
 
   This helps users with small displays and makes it possible to have
   several code files side-by-side on larger displays.
@@ -696,7 +696,7 @@ here are the most important points extracted for you:
 * Use spaces around operators and after commas, but not directly
   inside bracketing constructs: "a = f(1, 2) + g(3, 4)".
 
-* Name your classes and functions consistently; the convention is to
+* Name your classes and functions consistently-一致地; the convention is to
   use "CamelCase" for classes and "lower_case_with_underscores" for
   functions and methods.  Always use "self" as the name for the first
   method argument (see A First Look at Classes for more on classes and
